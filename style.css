@@ -1,0 +1,979 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.toggle-btn {
+    text-align: right;
+    width: 90px;
+}
+
+.toggle-mobile-nav {
+    background-color: #01aeb7;
+    color: white;
+    border-color: white;
+    border: none;
+    font-size: 1.5em;
+    vertical-align: middle;
+    box-shadow: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding: .5em;
+}
+
+.mobile-nav {
+    background-color: white;
+    display: none;
+    color: #3A3A3A;
+}
+
+li.mob-nav {
+    color: transparent;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    width: 100%;
+    line-height: 3;
+    position: relative;
+}
+
+.btn-mob-nav {
+    display: none;
+    background-color: #01aeb7;
+
+}
+
+.menu-link {
+    text-decoration: none;
+    display: inline-block;
+    border-style: solid;
+    border: 0;
+    display: inline-block;
+    width: 100%;
+    border-bottom-width: 1px;
+    font-size: 1rem;
+    color: black;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a.menu-link:hover {
+    color: #01aeb7;
+}
+
+@media (max-width: 921px) {
+    .menu-link {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+}
+
+/* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width:600px) {
+
+}
+
+@media only screen and (max-width: 900px) {
+    .btn-mob-nav {
+        display: block;
+    }
+    .jf-menu {
+        display: none !important;
+    }
+
+}
+
+/* Contact-Form */
+.Contact-class {
+    text-align: center;
+    padding: 15px 25px;
+    margin: auto;
+    width: 40%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    height: 100%;
+    background-color: #01aeb7;
+    display: block;
+    width: 100%;
+    /* increased width by 20% */
+}
+
+.Contact-Info {
+    padding: 35px;
+    width: 100%;
+    /* increased width by 20% */
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+}
+
+.dialog-box::-webkit-scrollbar {
+    display: none;
+    
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: .75em;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    box-shadow: none;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    float: none;
+    max-width: 100%;
+    color: #666;
+    margin: 0;
+}
+
+textarea {
+    width: 100%;
+    padding: .75em;
+    color: #666;
+    height: 120px;
+    border-width: 1px;
+    border-style: solid;
+    display: block;
+    float: none;
+    resize: vertical;
+    border-radius: 2px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    justify-content: space-around;
+    float: none;
+    display: block;
+    width: 100%;
+    color: #fff;
+    padding-top: 16px;
+    padding-right: 30px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+    background-color: #01aeb7;
+    height: auto;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+    border-style: solid;
+    border-radius: 30px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+    background-color: transparent;
+    color: #01aeb7;
+}
+
+/* Contact Form Finished */
+/* first page with logo and background */
+.jf-header {
+    background:
+        linear-gradient(to bottom,
+            rgb(165, 227, 232) 0%,
+            rgba(161, 227, 231, 0.8) 40%,
+            rgba(232, 249, 250, 0.1) 100%),
+        url('https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2020/02/home-banner-03.jpg') no-repeat center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120vh;
+    width: 100%;
+    text-align: justify;
+    background-color: #0edef1;
+    position: relative;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+/* 
+#main-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:flex-start;
+} */
+@media only screen and (max-width: 600px) {
+    .yoga-intro-section {
+        flex-direction: column-reverse;
+
+    }
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.yoga-main-block {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    /* background-color: red; */
+
+    margin: 2rem;
+    justify-content: center;
+
+}
+
+.yoga-main-block>.yoga-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.yoga-main-block>pre {
+    color: #3A3A3A;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Client CSS */
+.jf-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+}
+
+.jf-logo img {
+    height: 120px;
+    width: min-content;
+    padding: 0px;
+    top: 0;
+    position: absolute;
+    left: 150px;
+
+}
+
+.jf-menu {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    margin-left:15rem;
+    display: flex;
+    position: relative;
+    right: 0px;
+}
+
+.jf-menu li {
+    margin-left: 20px;
+}
+
+.jf-menu a {
+    text-decoration: none;
+    color: #5c5a5a;
+    font-weight: bold;
+}
+
+.jf-main {
+    padding: 50px;
+    margin: 50px;
+    align-content: stretch;
+
+}
+
+h5 {
+    margin: 30px 0px 0px;
+    text-align: justify;
+    color: #3A3A3A;
+    line-height: 1.2em;
+    font-size: 1.33333333333333em;
+    font-weight: 600;
+}
+
+
+
+/* body */
+.jf-hero-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.jf-hero-text {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+button.jf-btn {
+    background-color: #01aeb7;
+    color: #f6f9f9;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button.jf-btn:hover {
+    background-color: transparent;
+}
+
+
+
+.overlayx {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #01aeb7 50%, #ffff 100%);
+    /* background-image: linear-gradient(180deg, #01aeb7) 50%, #ffffff 100%); */
+    opacity: 1;
+    mix-blend-mode: screen;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    /* transition: background .3s, border-radius .3s, opacity .3s; */
+}
+
+
+/* Rounded sliders */
+span.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+#user-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+#user-2 {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+
+#user-3 {
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+
+.user-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-img-container {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.awards-class {
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* award head*/
+
+
+header h1 {
+    font-size: 2.5rem;
+    line-height: 1.4em;
+    margin:25px 0 0;
+    color:#00a896
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* yoga-types */
+main {
+    padding: 75px 50px 50px 50px;
+    margin: auto;
+    max-width: fit-content;
+}
+
+.yoga-types1 {
+    display: flex;
+}
+
+/* main .yoga-types1{
+    display: inline-flex;
+    justify-content: center left;
+    flex-wrap: wrap;
+    padding-bottom: 0%;
+
+} */
+div.yoga-types {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 40%;
+    position: relative;
+    gap: 1px;
+    align-content: center;
+    margin-top: 10%;
+    --e-column-margin-right: 0%;
+    --e-column-margin-left: 0%;
+
+}
+
+div.know-class {
+    background: url('https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2020/02/home-img-02.png');
+    background-size: cover;
+    float: left;
+    background-position: center;
+    font: 13.68px "Work Sans", sans-serif;
+    padding: 20% 18% 20% 5%;
+    color: #ffffff;
+    margin: 30px 0px 0px;
+    position: relative;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: justify;
+
+}
+
+.known-class {
+    color: #ffffff;
+    text-align: left;
+}
+
+.yoga-type {
+    width: 30%;
+    background-color: transparent;
+    text-align: center;
+}
+
+/* 
+.yoga-type img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+} */
+
+.yoga-type h4 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+div.yoga-para {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
+}
+
+/* Yoga-main */
+.yoga-main {
+    display: flex;
+    width: 50%;
+    gap: 3px;
+    margin-bottom: 0px;
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
+    text-align: center;
+}
+
+h4.yoga-main {
+    margin-bottom: -20px;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.yoga-time-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yoga-intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h4.yoga-class {
+    margin-top: 5px;
+    font-size: 0.9em;
+    font-weight: 600;
+    font-size: 1.6em;
+    color: #3A3A3A;
+    text-align: left;
+}
+
+.yoga-classes {
+    text-align: right;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 30px 0px 0px;
+    position: relative;
+}
+
+.yoga-class input {
+    opacity: 0px;
+    width: 0;
+    height: 0;
+}
+
+.yoga-class.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #00a896;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.switch {
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 34px;
+    vertical-align: middle;
+
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+input:checked+.slider {
+    background-color: transparent;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px transparent;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+span.yoga-class {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #4b4f58;
+    text-align: left;
+}
+
+a.yoga-class {
+    display: inline-block;
+    background-color: #00a896;
+    color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-top: 16px;
+    padding-right: 30px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a.yoga-class:hover {
+    background-color: transparent;
+    align-content: center;
+}
+
+/* awarded#1 */
+div.award1 {
+    font-size: 25px;
+    line-height: 1.3em;
+    font-weight: 600;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: block;
+}
+
+div.awards-class {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+}
+
+div.logos {
+    display: block;
+    background-size: cover;
+    margin-top: 16rem;
+    margin-bottom: -1rem;
+    width: 100% !important;
+    /* max-width: fit-content; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 11% 0%;
+    ;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)), url('img/bg-graphic-free-img-1.jpg');
+}
+
+div.logo {
+    justify-content: center;
+    opacity: .55;
+    padding: 10px;
+    display: flex;
+
+    box-shadow: none;
+}
+
+
+.user-img {
+    height: 100%;
+}
+
+.user-info {
+    width: calc(100% - 150px);
+    color: white;
+    padding: 20px;
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn {
+    height: 15px;
+    width: 15px;
+    border: 2px solid #0edef1;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.slide-btn {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+/* private classes */
+div.main-container {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)), url(https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2018/07/lotus-free-img.png);
+    /* opacity: .35; */
+    padding: 2rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+h5.container1 {
+    text-align: center;
+    line-height: 1.2em;
+    font-size: 1.33333333333rem;
+    font-weight: 600;
+}
+
+p.container1 {
+    text-align: center;
+    display: block;
+}
+
+h2.container1 {
+    margin: 30px 0 0;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.3em;
+    padding: 0;
+}
+
+button.button {
+    background-color: #00b09b;
+    color: white;
+    padding: 1em 2em;
+    text-align: center;
+    display: inline-block;
+    line-height: 1em;
+    font-size: 0.9333333333rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: transparent;
+}
+
+/* ClientTest */
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: 0;
+}
+
+.testimonial img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0;
+    vertical-align: middle;
+}
+
+h2.containers {
+    text-align: left;
+}
+
+.testimonial .rating {
+    font-size: inherit;
+    display: block;
+    color: #01aeb7;
+    text-align: left;
+    margin: 0px;
+}
+
+.testimonial .rating i {
+    margin-right: px;
+}
+
+.testimonial h3 {
+    font-weight: bold;
+    display: block;
+    text-align: start;
+    margin: 0px;
+}
+
+.testimonial p {
+    color: #666;
+    display: block;
+    line-height: 1;
+    text-align: start;
+    margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+}
+
+.testimonial-head {
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+.background {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)), url(https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2018/07/lotus-free-img.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    padding: 30px;
+    position: relative;
+    top: 0;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.left-container {
+    background: url('https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2020/02/home-img-05.png');
+    background-size: contain;
+    float: left;
+    width: 40%;
+    background-repeat: no-repeat;
+    font: 13.68px "Work Sans", sans-serif;
+    padding: 20% 12% 20% 5%;
+    color: #ffffff;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+div.container {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+
+}
+
+h4.h4-review {
+    text-align: left;
+}
+
+.div-review {
+    text-align: left;
+    left: 70px;
+    width: 100% !important;
+    position: absolute;
+}
+
+/* text-align: justify;
+/* ClientTest */
+
+/* after Contact me Part */
+.contact-container {
+    background-image: linear-gradient(to right, rgba(250, 250, 250, 0), rgba(250, 250, 250, 0)), url(https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2020/02/footer-banner-02.png);
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 540px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding-top: 15%;
+    padding-bottom: 16%;
+}
+
+h2.contact-h2 {
+    font-weight: 400;
+    margin-bottom: 1em;
+    line-height: 1.5;
+    display: block;
+    color: #f6f9f9;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p.contact {
+    margin-bottom: 1.75em;
+    display: block;
+    color: #f6f9f9;
+    text-align: center;
+}
+
+.social-nav-container {
+    padding: 30px;
+    color: white;
+    gap: 8px;
+    display: flex;
+    text-align: center;
+}
+
+.social-nav-list {
+    margin-right: 13px;
+    display: flex;
+    align-items: center;
+}
+
+/* Footer */
+.copyright {
+    display: block;
+    color: black;
+}
+
+div.copy-text1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+    text-align: left;
+    align-items: center;
+
+}
