@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>June Flint</title>
+</head>
+
+<body>
+    <header class="jf-header" style="z-index: 0;">
+        <nav class="jf-nav">
+            <div class="jf-logo">
+                <img src="img/logo-img.png" alt=" Yoga Studio Logo" img width="120" height="120"
+                    sizes="(max-width: 120px) 100vw,120px">
+            </div>
+            <ul class="jf-menu">
+                <li><a href="#">Intro</a></li>
+                <li><a href="#">Expertise</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Private Classes</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul><ul> <li class="btn-mob-nav">
+
+                    <!-- <button class="toggle-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </button> -->
+                    <button type="button" onclick="toggleMenu()" id="toggle-mobile-nav" class="toggle-mobile-nav">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- mob nav -->
+        <ul id="mobile-nav" class="mobile-nav">
+            <li class="mob-nav"><a href="#intro" class="menu-link">Intro</a></li>
+            <li class="mob-nav"><a href="#expertise" class="menu-link" style="text-decoration: none;">Expertise</a></li>
+            <li class="mob-nav"><a href="#awards" class="menu-link">Awards</a></li>
+            <li class="mob-nav"><a href="#classes" class="menu-link">Classes</a></li>
+            <li class="mob-nav"><a href="#private" class="menu-link">Private Classes</a></li>
+            <li class="mob-nav"><a href="#Reviews" class="menu-link">Reviews</a></li>
+            <li class="mob-nav"><a href="#contact" class="menu-link">Contact</a></li>
+
+        </ul>
+        <!-- mob nav -->
+
+        <main class="jf-main">
+
+            <section class="jf-hero">
+                <h4 style="color:#4b4f58; margin: 20px 0 0;
+    line-height: 1.2em;">Start Doing Yoga</h5><br>
+                    <h1 class="h3">Start A Healthy<br> Way Of <br>Life, Today!</h1><br>
+                    <h6>
+                        <p class="jf-hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                            luctus nec <br> ullamcorper mattis, pulvinar dapibus leo.</p>
+                    </h6>
+ <button class="jf-btn"  onclick="document.getElementById('myDialog').showModal()">Begin Now!
+
+ </button>
+<dialog id="myDialog" class="dialog-box" style="margin: auto;
+width: 30%;border:none;
+height: 80%;">
+  <form>
+    <div class="Contact-class">
+      <h2 style="color: #fff;font-size:25px;margin: 0;display: block;padding: 0;background-color: #01aeb7;">Contact Me</h2>
+    </div>
+    <div class="Contact-Info">
+      <div style="padding: 10px 0;position: relative;display: block;">
+        <input type="text" placeholder="Name" id="name" name="name"><br><br>
+      </div>
+      <div style="padding: 10px 0;position: relative;display: block;">
+        <input type="email" placeholder="Email" id="email" name="email"><br><br>
+      </div>
+      <div >
+        <input type="tel" placeholder="Numbers" id="numbers" name="numbers"><br><br>
+      </div>
+      <div >
+        <textarea id="message" placeholder="Message" name="message"></textarea><br><br>
+      </div>
+      <div >
+        <input type="submit" value="SEND MESSAGE">
+      </div>
+    </div>
+  </form>
+  <button style="position: absolute;top: 10px;right: 10px;" onclick="document.getElementById('myDialog').close()"><bold>X</bold></button>
+</dialog>
+
+
+ </section>
+        </main>
+    </header>
+<!-- #Know My Expertise Part -->
+    <header class="known-class">
+        <div class="main-know">
+            <div class="know-class">
+                <h4 class="known-class">Know</h4><br>
+                <h2 class="known-class">My Expertise</h2><br>
+                <hr size="4" width="70%" color="white"><br>
+                Consec tetur adipiscing <br>elit tellus
+            </div>
+    </header>
+    <div class="yoga-types">
+        <div class="yoga-type">
+            <img src="img/hatha-yoga.png" alt="Hatha Yoga">
+            <h4>Hatha Yoga</h4>
+            <div class="yoga-para">Neque porro quisquam est, qui dolore ipsum quia</div>
+        </div>
+
+        <div class="yoga-type">
+            <img src="img/vinyasa-yoga.png" alt="Vinyasa Yoga">
+            <h4>Vinyasa Yoga</h4>
+            <div class="yoga-para">Neque porro quisquam est, qui dolore ipsum quia</div>
+        </div>
+
+        <div class="yoga-type">
+            <img src="img/kundalini-yoga.png" alt="Kundalini Yoga">
+            <h4>Kundalini Yoga</h4>
+            <div class="yoga-para">Neque porro quisquam est, qui dolore ipsum quia</div>
+        </div>
+    </div>
+    </div>
+    <div class="yoga-types1" style="gap:10px;margin-left: 40%;">
+        <div class="yoga-type">
+            <img src="img/intuitive-yoga.png" alt="Intuitive Yoga">
+            <h4>Intuitive Yoga</h4>
+            <div class="yoga-para">Neque porro quisquam est, qui dolore ipsum quia</div>
+        </div>
+
+        <div class="yoga-type">
+            <img src="img/aroma-yoga.png" alt="Aroma Yoga">
+            <h4>Aroma Yoga</h4>
+            <div class="yoga-para">Neque porro quisquam est, qui dolore ipsum quia</div>
+        </div>
+
+        <div class="yoga-type">
+            <img src="img/yoga-slow.png" alt="Slow Yoga">
+            <h4>Slow Yoga</h4>
+            <div class="yoga-para">Neque porro quisquam est, qui dolore ipsum quia</div>
+        </div>
+    </div>
+
+    </div>
+    <!-- Awarded #1 -->
+    <div class="logos">
+        <div class="award-1">
+            <h2 style="text-align: center;">Awarded #1 By</h2>
+        </div>
+
+
+        <div class="awards-class">Luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </div>
+        <div class="logo">
+            <div>
+                <img src="https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2021/03/logo-1.svg"
+                    alt="Logo 1">
+            </div>
+            <div>
+                <img src="https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2021/03/logo-2.svg"
+                    alt="Logo 2">
+            </div>
+            <div>
+                <img src="https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2021/03/logo-3.svg"
+                    alt="Logo 3">
+            </div>
+            <div>
+                <img src="https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2021/03/logo-4.svg"
+                    alt="Logo 4">
+            </div>
+            <div>
+                <img src="https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2021/03/logo-5.svg"
+                    alt="Logo 5">
+            </div>
+        </div>
+    </div>
+    </div>
+    </main>
+    <!-- Yoga-Class -->
+    <section class="yoga-section">
+
+        <div class="yoga-intro-section">
+
+            <div id="main-cont">
+                <div class="yoga-time-section">
+                    <h4><span>Ancient Yoga</span></h4>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <h4> <span>Modern Yoga</span></h4>
+                </div>
+                <div class="yoga-main-block">
+
+                    <h5 class="yoga-time-label">
+                        7:00-8:00pm
+                    </h5>
+                    <div class="yoga-label">
+                        <h4 class="yoga-class">Hath Yoga</h4>
+                        <span class="yoga-class">Town Hall 1, Jackson, MS</span>
+                    </div>
+                    <div>
+                        <a href="#" class="yoga-class">$50 - RESERVE SEAT</a>
+                    </div>
+
+                </div>
+                <div class="yoga-main-block">
+                    <h5 class="yoga-time-label">
+                        8:00-9:00pm
+                    </h5>
+                    <div class="yoga-label">
+                        <h4 class="yoga-class">Kundalini Yoga</h4>
+                        <span class="yoga-class">Town Hall 2, Jackson, MS</span>
+                    </div>
+                    <div>
+                        <a href="#" class="yoga-class">$50 - RESERVE SEAT</a>
+                    </div>
+                </div>
+                <div class="yoga-main-block">
+                    <h5 class="yoga-time-label">
+                        9:00-10:00pm
+                    </h5>
+                    <div class="yoga-label">
+                        <h4 class="yoga-class">Aroma Yoga</h4>
+                        <span class="yoga-class">Town Hall 3, Jackson, MS</span>
+                    </div>
+                    <div>
+                        <a href="#" class="yoga-class">$50 - RESERVE SEAT</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: url(https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2020/02/home-img-04.png); padding: 25% 0% 18% 20%;">
+                <h4 style="color: #fff;margin:0;font-size: 1.6rem;
+    line-height: 1.2em;display: block;text-align: right;margin-right: 45px;">Attend</h4>
+ <h2 style="color: #fff;text-align: right;margin: 0 0 0 -4px ;margin-right:50px;font-size: 2rem;">My Classes</h2>
+<div style="text-align:right; margin-right: 5rem;">
+                    <div style="color: #fff;
+                text-align: right;border-top-style: solid;
+                display: inline-block;
+                border-top-color: #fff;
+                border-top-width: 2px;
+                width: 100px;
+                margin: 20px 0 0;"></div>
+                </div>
+                <div style="color: #fff;width: 100%; margin: 20px 0 0; ">Consec tetur adipiscing elitt elit tellus
+            </div>
+            </div>
+
+            <!-- <img src="https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2020/02/home-img-04.png"
+                id="yoga-img" alt="yoga image"> -->
+
+        </div>
+
+
+        <!-- <div class="yoga-classes">
+            <h4>Attend</h4>
+            <h2 >My Classes</h2>
+            <hr size="3" color="white" width="50%">
+            Consec tetur adipiscing elitt elit tellus
+        </div> -->
+    </section>
+    <div class="main-container" align="center">
+
+        <h5 class="container1">At Your Comfort</h5><br>
+        <h2 class="container1">Private Classes</h2>
+        <hr align="center" width="10%" color="black"><br>
+        <p class="container1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+            ullamcorper mattis, pulvinar dapibus leo.</p>
+        <div class="container1">
+            <button class="button" onclick="document.getElementById('myDialog').showModal()">Contact Me</button>
+            <dialog id="myDialog" class="dialog-box" style="margin: auto;
+width: 30%;border:none;
+height: 80%;">
+  <form>
+    <div class="Contact-class">
+      <h2 style="color: #fff;font-size:25px;margin: 0;display: block;padding: 0;background-color: #01aeb7;">Contact Me</h2>
+    </div>
+    <div class="Contact-Info">
+      <div style="padding: 10px 0;position: relative;display: block;">
+        <input type="text" placeholder="Name" id="name" name="name"><br><br>
+      </div>
+      <div style="padding: 10px 0;position: relative;display: block;">
+        <input type="email" placeholder="Email" id="email" name="email"><br><br>
+      </div>
+      <div >
+        <input type="tel" placeholder="Numbers" id="numbers" name="numbers"><br><br>
+      </div>
+      <div>
+        <textarea id="message" placeholder="Message" name="message"></textarea><br><br>
+      </div>
+      <div >
+        <input type="submit" value="SEND MESSAGE">
+      </div>
+    </div>
+  </form>
+  <button style="position: absolute;top: 10px;right: 10px;" onclick="document.getElementById('myDialog').close()"><i class="fa-regular fa-circle-xmark"></i></button>
+</dialog>
+        </div>
+
+
+    </div>
+
+    <div class="container">
+        <div class="left-container">
+            <h4 class="h4-review">Review</h4>
+            <h2 class="containers">People Say</h2>
+            <hr size="3" color="white" width="50%">
+            <div class="div-review"> Consec tetur adipiscing elitt elit tellus</div>
+        </div>
+        
+        <section class="background">
+          
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis, pulvinar dapibus leo.</p>
+                    <div class="testimonial-head">
+                        <img src="https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2018/07/client1-free-img.png" alt="
+                            Jessica Pearson">
+                        <div>
+                            <h3>Jessica Pearson</h3>
+                            <p>Fashion Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis, pulvinar dapibus leo.</p>
+                    <div class="testimonial-head">
+                        <img src="https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2018/07/client3-free-img.png"" alt="
+                            Rachel Zane">
+                        <div>
+                            <h3>Rachel Zane</h3>
+                            <p>Botanist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis, pulvinar dapibus leo.</p>
+                    <div class="testimonial-head">
+                        <img src="https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2018/07/client2-free-img.png"" alt="
+                            Mike Ross">
+                        <div>
+                            <h3>Mike Ross</h3>
+                            <p>Lawyer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis, pulvinar dapibus leo.</p>
+                    <div class="testimonial-head">
+
+                        <img src="https://websitedemos.net/yoga-04/wp-content/uploads/sites/250/2018/07/client4-free-img.png"" alt="
+                            Harvey Spector">
+                        <div>
+                            <h3>Harvey Spector</h3>
+                            <p>Actor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <div class="contact-container">
+        <div class="contact-info-container">
+            <h2 class="contact-h2">Contact Me</h2>
+            <p class="contact">contact@example.com <br> 987.654.2310</p>
+            <div class="social-nav-container">
+                <a href="#" class="link social-link"  style="font-size: 1.5rem;">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+
+                <a href="#" class="link social-link"  style="font-size: 1.5rem;">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#" class="link social-link" style="font-size: 1.5rem;">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="#" class="link social-link" style="font-size: 1.5rem;">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="copyright">
+        <div class="copy-text1">
+            <p>Copyright &copy;2024 Yoga Studio</p>
+            <p>Powered By Yoga Studio</p>
+        </div>
+
+
+        <script>
+
+
+            function toggleMenu() {
+                let btn = document.getElementById('toggle-mobile-nav');
+                let nav = document.getElementById('mobile-nav');
+                if (nav.style.display == 'none') {
+                    nav.style.display = 'block';
+
+                    btn.innerHTML = `<i class="fa-thin fa-x"></i>`;
+
+                } else {
+                    nav.style.display = 'none';
+
+                    btn.innerHTML = ` <i class="fa-solid fa-bars"></i>`;
+
+                }
+            }
+        </script>
+
+
+</body>
+
+</html>
